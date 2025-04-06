@@ -17,6 +17,7 @@ body{
     text-align: center;
     margin: 5px;
     flex-grow: 4;
+    flex-basis: 30%;
 
 }
 
