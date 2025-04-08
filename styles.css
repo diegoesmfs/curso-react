@@ -1,105 +1,43 @@
-*{
-    margin: 0px;
-    padding: 0px;
+.caja h2 {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.caja p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
 }
 
-body{
-
-    background-color: azure;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-#container{
-
-    width: 70%;
-    margin: 0px auto;
-    border: 1px solid rgb(32, 28, 28);
-
+body {
+  background: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    background-color: beige;
-    height: 100px;
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-    line-height: 100px;
-    color:black;
-    border-bottom: 3px dashed;
+h1 {
+  color: blue;
 }
 
-nav{
-
-    background: lightgoldenrodyellow;
-    height: 50px;
-    border: 1px solid black;
+p {
+  color: blue;
 }
 
-nav ul li{
-
-    line-height: 30px;
-    float: left;
-    list-style: none;
-    margin: 10px;
-
-
+.caja {
+  background-color: rgb(43, 43, 41);
+  border: 4px solid black;
+  box-shadow: 0px 0px 2px black;
+  color: blue;
+  margin: 20px;
 }
 
-.clearfix{
-
-    clear: both;
-
+.caja-secundaria {
+  background-color: blue;
+  border: 4px solid black;
+  box-shadow: 0px 0px 2px black;
+  color: blue;
+  margin: 20px;
 }
 
-#content{
-
-    float: left;
-    width: calc(80% - 80px);
-    min-height: 500px;
-    padding: 40px;
-
+.caja, .caja-secundaria {
+  width: 500px;
 }
 
-.article{
-
-    color: rgb(59, 41, 18);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid lightgrey;
-
-}
-
-.article:first-child{
-
-    padding-right: 10px;
-    border-top: 1px solid lightgray;
-
-}
-
-.article h2{
-
-font-size: 25px;
-
-}
-
-aside{
-    width: calc(20% - 20px);
-    float: left;
-    min-height: 500px;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-
-}
-
-footer{
-
-    color: black;
-    background: lightgoldenrodyellow;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
-
-}
+/*# sourceMappingURL=styles.css.map */
