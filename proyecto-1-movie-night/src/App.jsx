@@ -2,6 +2,7 @@ import './App.css'
 import { MiComponente } from './MiComponente'
 import { TercerComponente } from './TercerComponente'
 import { SegundoComponente } from './SegundoComponente'
+import { EventosComponente } from './EventosComponente'
 function App() {
 
   const fichaMedica = {
@@ -27,6 +28,8 @@ function App() {
         nombre = "Diego"
         ficha={fichaMedica}
         />
+        <hr />
+        <EventosComponente/>
 
       </div>
 
