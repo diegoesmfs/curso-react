@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export const TercerComponente = ({nombre, apellido, ficha}) => {
+export const TercerComponente = ({nombre = "UserName", apellido = "UserLastName", ficha}) => {
         
     return (
     <div className='tercer-componente'>
@@ -18,4 +19,12 @@ export const TercerComponente = ({nombre, apellido, ficha}) => {
 
     </div>
   )
+}
+
+TercerComponente.propTypes = {
+
+    nombre: PropTypes.string.isRequired,
+    apellido: PropTypes.string.isRequired,
+    ficha: PropTypes.object
+
 }

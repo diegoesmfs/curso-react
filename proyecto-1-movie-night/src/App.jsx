@@ -24,8 +24,7 @@ function App() {
         <SegundoComponente />
         <hr />
         <TercerComponente 
-        nombre="Diego" 
-        apellido="Morales" 
+        nombre = "Diego"
         ficha={fichaMedica}
         />
 
