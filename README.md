@@ -4,3 +4,6 @@ primero repaso de css3 y html5(se vienen cositas)
 
 librerias npm:
 -SASS npm install SASS
+npm vite@latest
+npm install
+npm run dev para correr la app de vite
