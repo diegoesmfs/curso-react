@@ -78,3 +78,21 @@ button:focus-visible {
   align-items: center;
 
 }
+.label{
+  display: block;
+  background-color: #535bf2;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 15px;
+
+}
+.label-green{
+
+  background-color: aqua;
+  color: #1a1a1a;
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 15px;
+
+}
