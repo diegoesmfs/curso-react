@@ -1,15 +1,11 @@
 import './App.css';
-import { AjaxComponent } from './components/AjaxComponent';
-import { PruebaComponent } from './components/PruebaComponent';
-
+import { FormularioComponent } from '../../componentes-eventos/FormularioComponent';
 
 function App() {
 
   return (
     <div className='App'>
-        <PruebaComponent />
-        <hr />
-        <AjaxComponent/>
+       <FormularioComponent />
     </div>
   )
 }

@@ -4,6 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+.body{
+
+  background-color: azure;
+
+}
 
 .card {
   padding: 2em;
@@ -11,4 +16,44 @@
 
 .read-the-docs {
   color: #888;
+}
+
+form input[type="text"],
+form select,
+form textarea{
+
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  min-width: 250px;
+  max-width: 250px;
+
+}
+form select{
+
+  min-width: 263px;
+  max-width: 263px;
+
+}
+
+form input[type="submit"],
+form button{
+
+  display: block;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #888;
+  color: beige;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: all 300ms;
+
+}
+form input[type="submit"]:hover,
+form button:hover{
+
+  background-color: #505050;
+
 }

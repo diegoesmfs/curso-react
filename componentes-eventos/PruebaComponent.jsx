@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { AvisoComponent } from './AvisoComponent';
+import { AvisoComponent } from '../../../componentes-eventos/AvisoComponent';
 
 export const PruebaComponent = () => {
 
