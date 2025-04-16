@@ -189,6 +189,20 @@ input[type="button"]{
     border-radius: 25px;
 
 }
+ 
+
+.search-button:hover{
+
+    background: #150b46;
+
+}
+
+.save:hover{
+
+    background: #150b46;
+
+}
+
 
 .edit:hover{
 
