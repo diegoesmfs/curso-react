@@ -62,7 +62,7 @@ export const ListComponent = ({listState, setListState}) => {
                             {/* edit form */}
                             {edit === movie.id && (
 
-                                <EditComponent movie={movie}/>
+                                <EditComponent movie={movie} getMovies={getMovies} setEdit={setEdit} setListState={setListState} />
 
                             )}
 
