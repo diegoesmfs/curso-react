@@ -1,8 +1,13 @@
 import { ListComponent } from "./components/ListComponent"
 import { SearchComponent } from "./components/SearchComponent"
 import { AddMovieComponent } from "./components/AddMovieComponent"
+import { useState } from "react";
 
 function App() {
+
+    const [listState, setListState] = useState([]);
+  
+
 
   return (
 
@@ -34,13 +39,13 @@ function App() {
       {/* all the movies*/}
 
       <section className="content">
-        <ListComponent />
+        <ListComponent listState={listState} setListState={setListState}/>
         </section>
 
       {/*the search section / form to add movies*/}
       <aside className="lateral">
         <SearchComponent />
-        <AddMovieComponent />
+        <AddMovieComponent setListState={setListState}/>
       </aside>
 
       <footer className="footer">

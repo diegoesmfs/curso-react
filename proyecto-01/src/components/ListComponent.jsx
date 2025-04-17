@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { EditComponent } from './EditComponent';
 
-export const ListComponent = () => {
+export const ListComponent = ({listState, setListState}) => {
 
-    const [listState, setListState] = useState([]);
+    const [edit, setEdit] = useState(0)
 
     useEffect(() => {
 
@@ -15,6 +16,28 @@ export const ListComponent = () => {
         let movies = JSON.parse(localStorage.getItem('movie'));
 
         setListState(movies);
+
+        return movies;
+
+    }
+
+    const deleteMovie = (id) => {
+
+        //get all movies
+
+        let addedMovies = getMovies();
+
+        //filter the movies to delete the movie that we want
+
+        let newMovieList = addedMovies.filter(movies => movies.id !== parseInt(id));
+
+        //set the list state
+
+        setListState(newMovieList);
+
+        //set the new data in the local storage
+
+        localStorage.setItem('movie', JSON.stringify(newMovieList));
 
     }
 
@@ -31,8 +54,19 @@ export const ListComponent = () => {
                             <h3 className="title">{movie.title}</h3>
                             <p className="description">{movie.description}</p>
 
-                            <button type="button" className="edit">Edit Movie</button>
-                            <button type="button" className="delete">Delete Movie</button>
+                            <button type="button" className="edit" onClick={() => {
+
+                                setEdit(movie.id)
+
+                            }}>Edit Movie</button>
+                            {/* edit form */}
+                            {edit === movie.id && (
+
+                                <EditComponent movie={movie}/>
+
+                            )}
+
+                            <button type="button" className="delete" onClick={() => deleteMovie(movie.id)}>Delete Movie</button>
 
 
                         </article>
