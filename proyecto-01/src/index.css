@@ -125,6 +125,12 @@ body {
 
 }
 
+.not-found{
+
+  color: red;
+
+}
+
 .edit-form{
 
   box-sizing: border-box;

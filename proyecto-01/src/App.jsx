@@ -44,7 +44,7 @@ function App() {
 
       {/*the search section / form to add movies*/}
       <aside className="lateral">
-        <SearchComponent />
+        <SearchComponent listState={listState} setListState={setListState}/>
         <AddMovieComponent setListState={setListState}/>
       </aside>
 
