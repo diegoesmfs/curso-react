@@ -1,5 +1,7 @@
 import { ListComponent } from "./components/ListComponent"
 import { SearchComponent } from "./components/SearchComponent"
+import { AddMovieComponent } from "./components/AddMovieComponent"
+
 function App() {
 
   return (
@@ -30,20 +32,26 @@ function App() {
       </nav>
 
       {/* all the movies*/}
-      <ListComponent />
+
+      <section className="content">
+        <ListComponent />
+        </section>
 
       {/*the search section / form to add movies*/}
-      <SearchComponent />
+      <aside className="lateral">
+        <SearchComponent />
+        <AddMovieComponent />
+      </aside>
 
-          <footer className="footer">
+      <footer className="footer">
 
-            &copy; MovieShack
+        &copy; MovieShack
 
-          </footer>
+      </footer>
 
-        </div>
+    </div>
 
-        )
+  )
 }
 
 export default App

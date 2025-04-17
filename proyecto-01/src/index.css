@@ -36,6 +36,13 @@ body {
   justify-content: center;
 }   
 
+.title{
+
+  justify-content: center;
+  display:flex;
+
+}
+
 .logo{
 
   background: linear-gradient(90deg, #fffff0 10% , darkslateblue   85%);

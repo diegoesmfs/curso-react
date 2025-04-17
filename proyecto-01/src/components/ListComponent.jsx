@@ -1,51 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export const ListComponent = () => {
+
+    const [listState, setListState] = useState([]);
+
+    useEffect(() => {
+
+        getMovies();
+
+    }, []);
+
+    const getMovies = () => {
+
+        let movies = JSON.parse(localStorage.getItem('movie'));
+
+        setListState(movies);
+
+    }
+
     return (
         <>
-        
-        <section className="content">
 
-            <article className="movie-item">
+            {listState != null ? 
+                listState.map((movie) => {
 
-                <h3 className="title">Some Movie</h3>
-                <p className="description">Some Description</p>
+                    return (
 
-                <button type="button" className="edit">Edit Movie</button>
-                <button type="button" className="delete">Delete Movie</button>
+                        <article className="movie-item" key={movie.id}>
 
+                            <h3 className="title">{movie.title}</h3>
+                            <p className="description">{movie.description}</p>
 
-            </article>
-            <article className="movie-item">
-
-                <h3 className="title">Some Movie</h3>
-                <p className="description">Some Description</p>
-
-                <button type="button" className="edit">Edit Movie</button>
-                <button type="button" className="delete">Delete Movie</button>
+                            <button type="button" className="edit">Edit Movie</button>
+                            <button type="button" className="delete">Delete Movie</button>
 
 
-            </article>
-            <article className="movie-item">
+                        </article>
 
-                <h3 className="title">Some Movie</h3>
-                <p className="description">Some Description</p>
+                    )
 
-                <button type="button" className="edit">Edit Movie</button>
-                <button type="button" className="delete">Delete Movie</button>
+                })
+                :
 
+                <h2 className='title'>No movies to watch</h2>
 
-            </article>
-            <article className="movie-item">
+            }
 
-                <h3 className="title">Some Movie</h3>
-                <p className="description">Some Description</p>
-
-                <button type="button" className="edit">Edit Movie</button>
-                <button type="button" className="delete">Delete Movie</button>
-
-
-            </article>
-        </section></>
+        </>
     )
 }
