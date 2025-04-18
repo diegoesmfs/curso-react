@@ -1,6 +1,8 @@
 # curso-react
 proyectos de un curso de reactJs
-primero repaso de css3 y html5(se vienen cositas)
+proyectos ejecutados: pagina para reviews de peliculas carpeta: :/curso-react/proyecto-01
+
+en la carpeta ./complementos-repaso-clases esta todo el contenido de los repasos y los hooks del curso
 
 librerias npm:
 -SASS npm install SASS
