@@ -96,3 +96,14 @@ button:focus-visible {
   margin: 15px;
 
 }
+.activado{
+
+  :hover{
+
+    cursor: pointer;
+    transition: all 300ms;
+    transform: scale(1.1,1.1);
+
+  }
+
+}
