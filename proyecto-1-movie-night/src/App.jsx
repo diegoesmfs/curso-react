@@ -1,11 +1,11 @@
 import './App.css';
+import { Inicio } from './components/Inicio';
+import { RouterMain } from './routers/RouterMain';
 
 function App() {
 
   return (
-    <div className='App'>
-      Proyecto
-    </div>
+    <RouterMain/>
   )
 }
 

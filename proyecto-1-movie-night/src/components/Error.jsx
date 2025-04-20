@@ -1,0 +1,13 @@
+import React from 'react'
+
+export const Error = () => {
+    return (
+        <div>
+
+            <h1>Error 404 Not Found</h1>
+            <p>Esta pagina no existe</p>
+
+
+        </div>
+    )
+}

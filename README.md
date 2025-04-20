@@ -8,5 +8,6 @@ librerias npm:
 -SASS npm install SASS
 npm vite@latest
 npm install prop-types
+npm install react-router-dom@7
 npm install
 npm run dev para correr la app de vite
