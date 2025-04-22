@@ -1,9 +1,15 @@
 import React from 'react'
-import { Routes, Route, NavLink, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, NavLink, BrowserRouter, Navigate } from 'react-router-dom';
 import { Inicio } from '../components/Inicio';
 import { Contacto } from '../components/Contacto';
 import { Articulos } from '../components/Articulos';
 import { Error } from '../components/Error';
+import { Persona } from '../components/Persona';
+import { ControlPanel } from '../components/ControlPanel';
+import { Home } from '../components/panel/Home';
+import { Post } from '../components/panel/Post';
+import { Log } from '../components/panel/Log';
+import { About } from '../components/panel/About';
 
 export const RouterMain = () => {
     return (
@@ -24,6 +30,10 @@ export const RouterMain = () => {
                         <NavLink to="/articles" className={({isActive}) => isActive ? "activado" : ""}>articles</NavLink>
 
                     </li>
+                    <li>
+                        <NavLink to="/panel" className={({isActive}) => isActive ? "activado" : ""}>Control Panel</NavLink>
+
+                    </li>
 
                 </ul>
 
@@ -35,6 +45,19 @@ export const RouterMain = () => {
                 <Route path="/home" element={<Inicio />} />
                 <Route path="/contact" element={<Contacto />} />
                 <Route path="/articles" element={<Articulos />} />
+                <Route path='/people/:name/:surname' element={<Persona/>}/>
+                <Route path='/people/:name' element={<Persona/>}/>
+                <Route path='/redirect' element={<Navigate to={"/people/diego/morales"} />}/>
+                <Route path='/people' element={<Persona/>}/>
+                <Route path='/panel/*' element={<ControlPanel/>}>
+                
+                    <Route index element={<Home/>}/>
+                    <Route path='home' element={<Home/>}/>
+                    <Route path='post-articles' element={<Post/>}/>
+                    <Route path='users-log' element={<Log/>}/>
+                    <Route path='about' element={<About/>}/>
+
+                </Route>
                 <Route path="*" element={<Error />} />
             </Routes>
 
