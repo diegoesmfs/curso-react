@@ -1,15 +1,15 @@
 import React from 'react'
 import { Routes, Route, NavLink, BrowserRouter, Navigate } from 'react-router-dom';
-import { Inicio } from '../components/Inicio';
-import { Contacto } from '../components/Contacto';
-import { Articulos } from '../components/Articulos';
-import { Error } from '../components/Error';
-import { Persona } from '../components/Persona';
-import { ControlPanel } from '../components/ControlPanel';
-import { Home } from '../components/panel/Home';
-import { Post } from '../components/panel/Post';
-import { Log } from '../components/panel/Log';
-import { About } from '../components/panel/About';
+import { Inicio } from '../../../proyecto-1-movie-night/src/components/Inicio';
+import { Contacto } from '../../../proyecto-1-movie-night/src/components/Contacto';
+import { Articulos } from '../../../proyecto-1-movie-night/src/components/Articulos';
+import { Error } from '../../../proyecto-1-movie-night/src/components/Error';
+import { Persona } from '../../../proyecto-1-movie-night/src/components/Persona';
+import { ControlPanel } from '../../../proyecto-1-movie-night/src/components/ControlPanel';
+import { Home } from '../../../proyecto-1-movie-night/src/components/panel/Home';
+import { Post } from '../../../proyecto-1-movie-night/src/components/panel/Post';
+import { Log } from '../../../proyecto-1-movie-night/src/components/panel/Log';
+import { About } from '../../../proyecto-1-movie-night/src/components/panel/About';
 
 export const RouterMain = () => {
     return (
