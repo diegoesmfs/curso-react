@@ -1,17 +1,11 @@
 import './App.css';
-import { Form } from '../components/Form';
-import { Example } from '../components/Example';
+import { Gestion } from '../components/Gestion';
 
 function App() {
 
   return (
     <div>
-
-      <Example />
-
-      <hr />
-
-      <Form />
+        <Gestion></Gestion>
     </div>
   )
 }
